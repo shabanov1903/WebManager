@@ -1,0 +1,17 @@
+<div *ngIf="activefiledirlist.find">
+    <h6 class="mx-3 my-2">
+        <label for="formGroupExampleInput" class="form-label">Введите слово для поиска в текущей директории:</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" #formGroupExampleInput>
+    </h6>
+    <button type="button tbutton" class="btn btn-outline-primary tbutton ml-3" (click)="Find(formGroupExampleInput)">Найти</button>
+    <div *ngIf="activefiledirlist.findresults">
+        <h6 class="mx-3 my-3">
+            Результаты поиска:
+        </h6>
+        <div class="tbody mx-3 my-3 border border-secondary">
+            <div *ngFor="let item of files.files">
+                {{item}}
+            </div>
+        </div>
+    </div>    
+</div>

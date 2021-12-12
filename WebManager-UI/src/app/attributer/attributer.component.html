@@ -1,0 +1,44 @@
+<h5 class="my-3 text-style">Измените атрибуты выбранного файла!</h5>
+
+<div class="container my-5">
+  <div class="row text-style">
+    <div class="col-sm">
+      <div class="card style" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Hidden</h5>
+          <p class="card-text">Скрытый файл, который не будет включаться в обычный список каталога</p>
+          <a routerLink="" routerLinkActive="active" class="btn btn-primary" (click)="SetAttributeFile(1)">Выбрать</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card style" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">System</h5>
+          <p class="card-text">Системный файл, который является частью операционной системы</p>
+          <a routerLink="" routerLinkActive="active" class="btn btn-primary" (click)="SetAttributeFile(2)">Выбрать</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row text-style my-5">
+    <div class="col-sm">
+      <div class="card style" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Readonly</h5>
+          <p class="card-text">Файл, который предполагает только чтение</p>
+          <a routerLink="" routerLinkActive="active" class="btn btn-primary" (click)="SetAttributeFile(3)">Выбрать</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card style" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Normal</h5>
+          <p class="card-text">Обычный файл без дополнительных атрибутов</p>
+          <a routerLink="" routerLinkActive="active" class="btn btn-primary" (click)="SetAttributeFile(4)">Выбрать</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

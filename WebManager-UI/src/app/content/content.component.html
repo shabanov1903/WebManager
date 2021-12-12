@@ -1,0 +1,25 @@
+<div *ngIf="activefiledirlist.content">
+  <h6 class="mx-3 my-3">
+    Содержание файла {{activefiledirlist.activeFile}}:
+  </h6>
+  <div class="tbody mx-3 my-3 border border-secondary">
+    <div *ngFor="let item of activefiledirlist.activeContent.text">
+      {{item}}
+    </div>
+    <div>
+      --------------------------------------------------------
+    </div>
+    <div>
+      Количество слов: {{activefiledirlist.activeContent.numbwords}}
+    </div>
+    <div>
+      Количество строк: {{activefiledirlist.activeContent.numblines}}
+    </div>
+    <div>
+      Количество символов с пробелами: {{activefiledirlist.activeContent.numbcharswithscapes}}
+    </div>
+    <div>
+      Количество символов без пробелов: {{activefiledirlist.activeContent.numbcharswithoutscapes}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.tbody {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 40vh;
+}
+
+.tbutton {
+    width: 150px;
+}
+
+.raz {
+    text-align: right;
+}
+
+.border-button {
+    border-color: black;
+}

@@ -1,0 +1,38 @@
+<h5 class="my-3 text-style">Создайте новую директорию или файл!</h5>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card style" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Директория</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Новая директория</h6>
+            <p class="card-text">Для создания на сервере новой директории нажмите здесь</p>
+            <div class="input-group my-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="">Имя</span>
+              </div>
+              <input type="text" class="form-control" id="inputfolder" #inputfolder>
+            </div>
+            <a routerLink="" routerLinkActive="active" class="card-link" (click)="CreateFolder(inputfolder)">Создать</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card style" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Файл</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Текстовый файл</h6>
+            <p class="card-text">Для создания на сервере нового файла нажмите здесь</p>
+            <div class="input-group my-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="">Имя</span>
+              </div>
+              <input type="text" class="form-control" id="inputfile" #inputfile>
+            </div>
+            <a routerLink="" routerLinkActive="active" class="card-link" (click)="CreateFile(inputfile)">Создать</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

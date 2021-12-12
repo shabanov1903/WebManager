@@ -1,0 +1,12 @@
+.aligncenter {
+    display: block;
+    margin: 0 auto;
+}
+
+.colortext {
+    color: darkgray;
+}
+
+.positiontext {
+    text-align: right;
+}
