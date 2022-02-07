@@ -1,0 +1,21 @@
+<h5 class="mx-3 my-3">
+  Результат запроса данных директории:
+</h5>
+<div class="tbody mx-3 my-3 border border-secondary">
+  <ul class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let item of activefiledirlist.objectsArray">
+        <element-component></element-component>
+      </li>
+    </ul>
+</div>
+
+<div class="justify-content-md-end mx-3 my-3 raz">
+  <div class="btn-group">
+    <button type="button" class="btn btn-light dropdown-toggle border-button" data-bs-toggle="dropdown" aria-expanded="true">Общие действия</button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href=# (click)="Paste()">Вставить</a></li>
+      <li><a class="dropdown-item" routerLink="/create" routerLinkActive="active">Создать</a></li>
+      <li><a class="dropdown-item" href=# (click)="Find()">Поиск</a></li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<h5 class="my-3 text-style">Переименуйте директорию или файл!</h5>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card style" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Новое имя</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Директория или файл</h6>
+            <p class="card-text">Для переименования директории или файла введите новой имя и нажмите здесь</p>
+            <div class="input-group my-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="">Имя</span>
+              </div>
+              <input type="text" class="form-control" id="inputfile" #inputfile>
+            </div>
+            <a routerLink="" routerLinkActive="active" class="card-link" (click)="RenameFile(inputfile)">Переименовать</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
